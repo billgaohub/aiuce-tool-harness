@@ -1,6 +1,12 @@
 # AIUCE Tool Harness
 
-Tool registration and invocation framework for AI agents.
+[![Python](https://img.shields.io/badge/Python-2.7%20%7C%203.8+-blue.svg)](https://python.org)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Framework](https://img.shields.io/badge/Framework-Tool%20Harness-orange.svg)]()
+
+**Tool registration and invocation framework for AI agents.**
+
+Tool registration, discovery, and sovereign execution framework for AI agents. Classifies tools across three domains (BODY/FLOW/INTEL), routes files intelligently, and enforces sovereignty checks before execution.
 
 ## Features
 
@@ -70,9 +76,11 @@ result = registry.invoke("my-tool", {"path": "/data/file.csv"})
 
 Every tool is classified into one of three domains:
 
-- **BODY** — Execution: operations, tool calls, file processing
-- **FLOW** — Flow: routing, scheduling, coordination
-- **INTEL** — Intelligence: analysis, reasoning, decision support
+| Domain | Role | Examples |
+|--------|------|----------|
+| **BODY** | Execution | tool calls, file I/O, data processing |
+| **FLOW** | Coordination | routing, scheduling, orchestration |
+| **INTEL** | Reasoning | analysis, decision support, planning |
 
 ## License
 
